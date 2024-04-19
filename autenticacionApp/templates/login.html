@@ -1,0 +1,12 @@
+<h1>Iniciar sesion</h1>
+{{msg}}
+<form  method="POST" action="/login/">
+    {% csrf_token %}
+    {{form}}
+<button>Iniciar sesion</button>
+</form>
+
+<div>
+    <a>¿aun no te registras?</a>
+    <button><a href="registro/">Registrate</a></button>
+</div>

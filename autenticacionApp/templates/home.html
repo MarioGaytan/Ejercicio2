@@ -1,0 +1,16 @@
+<h1>Pagina principal home</h1>
+{% if user.is_authenticated %}
+<button>
+    <a href="/salir">Cerrar sesion</a>
+</button>
+<button>
+    <a href="/priv">Otra pagina</a>
+</button>
+{% else %}
+<button>
+    <a href="/registro">Registrarse</a>
+</button>
+<button>
+    <a href="/">Iniciar Sesion</a>
+</button>
+{% endif %}
